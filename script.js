@@ -76,10 +76,10 @@ newSnake = new Snake(snakePosition, x, y, direction);
 // funcao para atualizar requestKeyFrame
 
 function init() {
-  newSnake.init()
+  newSnake.init();
 }
 setInterval(() => {
-  ctx.clearRect(x, y, 400, 400)
+  ctx.clearRect(x, y, 400, 400);
   init();
-},3000)
-init()
+}, 3000);
+init();
