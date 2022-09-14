@@ -10,8 +10,8 @@ y = 20;
 let snakePosition = [
   { x: 80, y: 80 },
   { x: 100, y: 80 },
-  { x: 120, y: 80 },
-  { x: 140, y: 80 },
+  { x: 120, y: 100 },
+  { x: 140, y: 100 },
 ];
 
 // carregar o canvas
@@ -25,10 +25,14 @@ class Snake {
     this.snakePosition = snakePosition;
   }
   draw() {
-    console.log(snakePosition);
+    snakePosition.map((pos) => {
+      ctx.fillRect(pos.x, pos.y, x, y);
+    });
   }
 }
 
+let newSnake = new Snake(snakePosition, x, y);
+newSnake.draw();
 // criar o objeto comida
 
 // modificar direcoes a partir de acoes do teclado
