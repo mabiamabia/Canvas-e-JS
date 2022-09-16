@@ -17,3 +17,17 @@ context.arc(200, 50, 20, 0, Math.PI * 2);
 
 context.fill();
 
+context.beginPath();
+context.moveTo(200, 80);
+context.lineTo(200, 180);
+context.stroke();
+
+context.beginPath();
+context.moveTo(200, 80);
+context.lineTo(150, 130);
+context.stroke();
+
+context.beginPath();
+context.moveTo(200, 80);
+context.lineTo(250, 130);
+context.stroke();
